@@ -3,13 +3,31 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design-icons/2.2.0/scss/material-icons.scss");
-.section{
-    float: right;
-    position: relative;
-    height: auto;
-    width: 65vw;
-    background : #192028;
+.ac-nos-services{
+    // float: right;
+    background-color: transparent;
+    background-image: linear-gradient(
+180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    height: 185%;
+    width: 100%;
+    top: 0;
+    left: 0;
+   position: relative;
+    background: url("https://www.laptopspirit.fr/wp-content/uploads/new/hp_spectre_13_test-600x382.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+   
     
+
+    .ac-nos-services--content{
+       margin-left: auto;
+        position: relative;
+        height: auto;
+        width: 65vw;
+        background : #192028;
+    }
 
     h2{
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;;
@@ -67,4 +85,19 @@
         }
     }
     
+}
+
+.ac-nos-services::before,
+.ac-nos-services::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    background: #fff;
+}
+
+.ac-nos-services::before{
+    content: "";
+    background: #fff;
+    height: 180vh;
+    opacity: 0.5;
 }
